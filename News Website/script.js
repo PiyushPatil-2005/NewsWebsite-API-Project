@@ -6,6 +6,7 @@ window.addEventListener("load", () => {
     if (!username) {
         document.getElementById("auth-popup").style.display = "flex";
     } else {
+        console.log("Hello");
         fetchNews("Technology");
         displayBookmarkedArticles(username);
     }
